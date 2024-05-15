@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import { Banner } from './components/banner/Banner';
+import { Emblems } from './components/emblems/Emblems';
+import { Footer } from './components/footer/Footer';
+import { Header } from './components/header/Header';
+import { Marks } from './components/marks/Marks';
+import { Modal } from './components/modal/Modal';
+import { Section } from './components/section/Section';
+import { Testimonials } from './components/testimonial/Testimonials';
+
+import data from './API/rms.json';
 
 function App() {
+  const [currentRoom, setCurrentRoom] = useState(null);
+  const [roomsList, setRoomsList] = useState([]);
+
+  useEffect(() => {
+    fetchRooms();
+  }, []);
+
+  const fetchRooms = () => {
+    const roomsData = data["accom"];
+
+    if (roomsData) {
+      setRoomsList(roomsData);
+    }
+  };
+
+  const toSetCurrentRoom = (id) => {
+    setCurrentRoom(id);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      <Section list={roomsList} setCurrentRoom={toSetCurrentRoom} />
+      <Emblems />
+      <Marks />
+      <Testimonials />
+      <Footer />
+      {currentRoom && <Modal currentRoom={currentRoom} setCurrentRoom={toSetCurrentRoom} />}
     </div>
   );
 }
