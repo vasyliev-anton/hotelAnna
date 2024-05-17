@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import main from '../../imgs/rooms/21/1.jpg';
 import profileIcon from '../../icons/iconPerson.svg';
@@ -19,7 +19,6 @@ export const Section = ({ list, setCurrentRoom }) => {
   useEffect(() => {
     if (list) {
       const res = list.map(room => rooms[room]);
-      
       setRoomList(res.reverse());
     }
   }, [list]);
@@ -28,84 +27,74 @@ export const Section = ({ list, setCurrentRoom }) => {
     return null;
   }
 
-
   return (
     <section className="section" id='rooms'>
       <div className="section__title-name">
         <hr />
-        <div>
-
-        </div>
+        <div></div>
         <span className="section__span">
           <span className="section__span--color-yel">Наші</span> кімнати
         </span>
         <hr />
       </div>
 
-      <ul className='carts__list'>
-        {roomList.length && roomList.map((cart) => {
-          return (
-            <li className="cart" key={cart.rmNumber}>
-            <img src={main} alt="" className='cart__main-img' />
-            <div className="cart__line">
-              <div className='cart__line--group'>
-                <img src={profileIcon} alt="" />
-                <span className="cart__span">{cart.guests} Особи</span>
+      <ul className='cards__list'>
+        {roomList.map((card, index) => (
+          <li className="card" key={index}>
+            <img src={main} alt="Room" className='card__main-img' />
+            <div className="card__line">
+              <div className='card__line--group'>
+                <img src={profileIcon} alt="Guest Icon" />
+                <span className="card__span">{card.guests} Особи</span>
               </div>
-    
-              <span className="cart__span">{cart.price}</span>
+              <span className="card__span">{card.price}</span>
             </div>
-            <div className='cart__description'>
-              <span className='cart__name'>{cart.comfort}</span>
-    
-              <ul className='cart__list'>
-                <li className='cart__item'>
-                  <img src={bedIcon} alt=""  className='cart__icon'/>
+            <div className='card__description'>
+              <span className='card__name'>{card.comfort}</span>
+              <ul className='card__list'>
+                <li className='card__item'>
+                  <img src={bedIcon} alt="Bed Icon" className='card__icon' />
                   Апартаменти повністю
                 </li>
-                <li className='cart__item'>
-                  <img src={conditionerIcon} alt=""  className='cart__icon'/>
+                <li className='card__item'>
+                  <img src={conditionerIcon} alt="Conditioner Icon" className='card__icon' />
                   Кондиціонер
                 </li>
-                <li className='cart__item'>
-                  <img src={tvRoomIcon} alt="" />
+                <li className='card__item'>
+                  <img src={tvRoomIcon} alt="TV Icon" className='card__icon' />
                   Телевізор з плоским екраном
                 </li>
-                <li className='cart__item'>
-                  <img src={freeWifiIcon} alt="" />
+                <li className='card__item'>
+                  <img src={freeWifiIcon} alt="WiFi Icon" className='card__icon' />
                   Безкоштовний Wi-Fi
                 </li>
-                <li className='cart__item'>
-                  <img src={bathIcon} alt=""  className='cart__icon'/>
+                <li className='card__item'>
+                  <img src={bathIcon} alt="Bath Icon" className='card__icon' />
                   Ванна кімната в номері
                 </li>
-                <li className='cart__item'>
-                  <img src={washingMachineIcon} alt=""  className='cart__icon'/>
+                <li className='card__item'>
+                  <img src={washingMachineIcon} alt="Washing Machine Icon" className='card__icon' />
                   Пральна машина
                 </li>
-                <li className='cart__item'>
-                  <img src={newStyleIcon} alt=""  className='cart__icon'/>
-                
+                <li className='card__item'>
+                  <img src={newStyleIcon} alt="New Style Icon" className='card__icon' />
                   Сучасний ремонт
                 </li>
-                <li className='cart__item'>
-                  <img src={terraceIcon} alt=""  className='cart__icon'/>
+                <li className='card__item'>
+                  <img src={terraceIcon} alt="Terrace Icon" className='card__icon' />
                   Власна тераса
                 </li>
               </ul>
-    
-              <button
-                className="cart__button" 
-                onClick={() => setCurrentRoom(cart.rmNumber)}>
-                  Дізнатися більше
-              </button>
             </div>
-    
+            
+            <button
+                className="card__button"
+                onClick={() => setCurrentRoom(card.rmNumber)}>
+                Дізнатися більше
+              </button>
           </li>
-          )
-        })}
-
+        ))}
       </ul>
     </section>
-  )
-}
+  );
+};

@@ -1,7 +1,7 @@
 export const Marks = () => {
 
   return (
-    <section>
+    <section className="section">
       <div className="section__title-name">
         <hr />
         <span className="section__span">
