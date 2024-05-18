@@ -33,25 +33,25 @@ export const Emblems = () => {
         </h2>
         
         <ul className="emblems__list">
-          <li className="emblems__item">
+          <li className="emblems__item shake">
             <div className="emblems__container--icon">
               {food && <img src={food} alt="" />}
             </div>
             Чудові сніданки
           </li>
-          <li className="emblems__item">
+          <li className="emblems__item shake">
             <div className="emblems__container--icon">
               {like && <img src={like} alt="" />}
             </div>
             Доброзичливий сервіс
           </li>
-          <li className="emblems__item">
+          <li className="emblems__item shake">
             <div className="emblems__container--icon">
               {geo && <img src={geo} alt="" />}
             </div>
             Місцезнаходження
           </li>
-          <li className="emblems__item">
+          <li className="emblems__item shake">
             <div className="emblems__container--icon">
               {bedroom && <img src={bedroom} alt="" />}
             </div>

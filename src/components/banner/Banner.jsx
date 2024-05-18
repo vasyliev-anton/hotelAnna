@@ -15,7 +15,7 @@ export const Banner = () => {
       </div>
 
       <span className='img__span'>
-        Тут вас чекають!
+        Тут Вас чекають!
       </span>
     </div>
   )
