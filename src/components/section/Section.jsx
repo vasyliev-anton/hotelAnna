@@ -46,7 +46,9 @@ export const Section = ({ list, setCurrentRoom }) => {
       <ul className='cards__list'>
         {roomList.map((card, index) => (
           <li className="card" key={index}>
-            <img src={card.sourceLink} alt="Room" className='card__main-img' />
+            <div className='card__photo--container'>
+              <img src={card.sourceLink} alt="Room" className='card__main-img' />
+            </div>
             <div className="card__line">
               <div className='card__line--group'>
                 <img src={profileIcon} alt="Guest Icon" />
