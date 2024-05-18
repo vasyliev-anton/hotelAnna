@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import main from '../../imgs/rooms/21/1.jpg';
 import profileIcon from '../../icons/iconPerson.svg';
 import bedIcon from '../../icons/bed.svg';
 import bathIcon from '../../icons/bath.svg';
@@ -18,7 +17,13 @@ export const Section = ({ list, setCurrentRoom }) => {
 
   useEffect(() => {
     if (list) {
-      const res = list.map(room => rooms[room]);
+      const res = list.map(room => {
+        const data = rooms[room];
+
+        data.sourceLink = require(`../../imgs/rooms/${room}/0.jpg`);
+
+        return data;
+      });
       setRoomList(res.reverse());
     }
   }, [list]);
@@ -41,7 +46,7 @@ export const Section = ({ list, setCurrentRoom }) => {
       <ul className='cards__list'>
         {roomList.map((card, index) => (
           <li className="card" key={index}>
-            <img src={main} alt="Room" className='card__main-img' />
+            <img src={card.sourceLink} alt="Room" className='card__main-img' />
             <div className="card__line">
               <div className='card__line--group'>
                 <img src={profileIcon} alt="Guest Icon" />
