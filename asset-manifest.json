@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/hotelanna/static/css/main.a52e6d00.css",
-    "main.js": "/hotelanna/static/js/main.b9e6a620.js",
+    "main.css": "/hotelanna/static/css/main.7f911f13.css",
+    "main.js": "/hotelanna/static/js/main.4ac21fdc.js",
     "static/media/IMG_1352 2.jpg": "/hotelanna/static/media/IMG_1352 2.ecbbd92caa621c6763fe.jpg",
     "static/media/2.jpg": "/hotelanna/static/media/2.617ae7c020a28fb366a5.jpg",
-    "static/media/1.jpg": "/hotelanna/static/media/1.13055b7bf7159f842480.jpg",
+    "static/media/1.jpg": "/hotelanna/static/media/1.3e53d5eb18b361e8252a.jpg",
     "static/media/3.jpg": "/hotelanna/static/media/3.8a0035b894213b57eee8.jpg",
     "static/media/0.jpg": "/hotelanna/static/media/0.c5db3e0f2151f95e4e31.jpg",
+    "static/media/5.jpg": "/hotelanna/static/media/5.162639552f9eabc390f8.jpg",
     "static/media/4.jpg": "/hotelanna/static/media/4.7fe29104966c3e6a49ea.jpg",
-    "static/media/5.jpg": "/hotelanna/static/media/5.d81b74d4af84bbe47e23.jpg",
-    "static/media/6.jpg": "/hotelanna/static/media/6.baee64ba04b8c6db8c0e.jpg",
-    "static/media/7.jpg": "/hotelanna/static/media/7.a343b06f5d7789610244.jpg",
-    "static/media/8.jpg": "/hotelanna/static/media/8.64777cde9a206e193f38.jpg",
+    "static/media/6.jpg": "/hotelanna/static/media/6.a343b06f5d7789610244.jpg",
+    "static/media/7.jpg": "/hotelanna/static/media/7.64777cde9a206e193f38.jpg",
     "static/media/IMG_1352 1.jpg": "/hotelanna/static/media/IMG_1352 1.dcd20800e3a99c221410.jpg",
     "static/media/IMG_1090 1.jpg": "/hotelanna/static/media/IMG_1090 1.08c15ae908bd95381bb9.jpg",
     "static/media/IMG_1622 2.jpg": "/hotelanna/static/media/IMG_1622 2.61c6f6b48f085ffff183.jpg",
@@ -36,11 +35,11 @@
     "static/media/Location.svg": "/hotelanna/static/media/Location.a0369ca2954df7e3d3ac70a3cd4f70c1.svg",
     "static/media/Check.svg": "/hotelanna/static/media/Check.c05aceb20f375e372fb6.svg",
     "static/media/down.svg": "/hotelanna/static/media/down.b86a941abb07b29258af74aedc1c8bc1.svg",
-    "main.a52e6d00.css.map": "/hotelanna/static/css/main.a52e6d00.css.map",
-    "main.b9e6a620.js.map": "/hotelanna/static/js/main.b9e6a620.js.map"
+    "main.7f911f13.css.map": "/hotelanna/static/css/main.7f911f13.css.map",
+    "main.4ac21fdc.js.map": "/hotelanna/static/js/main.4ac21fdc.js.map"
   },
   "entrypoints": [
-    "static/css/main.a52e6d00.css",
-    "static/js/main.b9e6a620.js"
+    "static/css/main.7f911f13.css",
+    "static/js/main.4ac21fdc.js"
   ]
 }
