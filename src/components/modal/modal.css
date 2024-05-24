@@ -1,0 +1,222 @@
+.modal--container {
+  display: none;
+  z-index: 2;
+  width: 90%;
+  max-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  align-self: center;
+}
+
+.modal--overlay  {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.active--modal {
+  display: block;
+}
+
+.modal--cross {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #FFB46B;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.modal--cross:hover {
+  transition-duration: 0.3s;
+  background-color: black;
+}
+
+.modal {
+  position: relative;
+  background-color: #4e4949;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 37px;
+  padding: 2rem;
+}
+
+.modal__photos--container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 750px;
+  align-items: center;
+}
+
+.modal__img {
+  width: 420px;
+  height: 520px;
+}
+
+.modal__button--click {
+  background-color: #FFB46B;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__button--click:hover {
+  background-color: black;
+  transition-duration: 0.3s;
+}
+
+.photos__list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal__description {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: flex-start;
+}
+
+.modal__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.26px;
+  text-align: left;
+}
+
+.modal__subtitle {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18.29px;
+  text-align: left;
+}
+
+.modal__note {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22.1px;
+  text-align: left;
+}
+
+.modal__text-description {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+}
+
+.modal__list {
+  columns: 2;
+}
+
+.modal__item {
+  display: flex;
+  gap: 18px;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  text-align: left;
+}
+
+.photos__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photos__item {
+  transform: scale(1);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.check::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../icons/Check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal__photo--main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+  padding: 0 15px;
+}
+
+.active {
+  object-fit: cover;
+  transform: scale(0.85);
+  border: 5px solid #FFB46B;
+}
+
+.wrong {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-align: left;
+
+  color: #FF0000;
+}
+
+.success {
+  color:#27AE60;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-align: left;
+}
+
+/* Медиазапрос для скрытия модального окна на телефонах */
+@media (max-width: 768px) {
+  .modal--container {
+    display: none !important;
+  }
+}
