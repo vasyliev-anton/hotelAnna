@@ -1,9 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import banner1 from '../../imgs/banner/IMG_1090 1.jpg';
 import banner2 from '../../imgs/banner/IMG_1352 1.jpg';
 import banner3 from '../../imgs/banner/IMG_1352 2.jpg';
 import banner4 from '../../imgs/banner/IMG_1622 2.jpg';
 
 export const Banner = () => {
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -15,7 +17,7 @@ export const Banner = () => {
       </div>
 
       <span className='img__span'>
-        Тут Вас чекають!
+        {t('main')}
       </span>
     </div>
   )

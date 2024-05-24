@@ -72,12 +72,18 @@
   gap: 20px;
   box-sizing: border-box;
   background-color: #FFB46B;
+  border: none;
   border-radius: 5px;
   color: white;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.75px;
   text-align: center;
+}
+
+.button--footer:hover {
+  background-color: #161617;
+  transition-duration: 0.3s;
 }
 
 .footer__right {

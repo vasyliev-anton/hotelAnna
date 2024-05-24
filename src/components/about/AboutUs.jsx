@@ -1,6 +1,6 @@
 export const AboutUs = () => {
   return (
-    <section class="about-us section">
+    <section class="about-us section" id="about">
       <div className="about-us__title--container">
         <hr />
           <h3 className="about-us__title">

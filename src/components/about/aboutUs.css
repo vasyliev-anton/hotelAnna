@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
-  animation: title-fade-in 1s ease-in-out forwards; /* New animation for title */
+  animation: title-fade-in 2s ease-in-out forwards; /* New animation for title */
 }
 
 .about-us__title::before {
@@ -33,7 +33,7 @@
   background: transparent;
   background-image: url('../../icons/ABOUT\ US.svg');
   background-repeat: no-repeat;
-  animation: title-underline-slide 0.5s ease-in-out forwards; /* New animation for underline */
+  animation: title-underline-slide 2s ease-in-out forwards; /* New animation for underline */
 }
 
 @keyframes title-fade-in {
