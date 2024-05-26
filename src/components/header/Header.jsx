@@ -1,11 +1,14 @@
 import { useTranslation } from "react-i18next";
 import i18n from '../../i18';
+import { useState } from "react";
 
 export const Header = () => {
+  const [isUkr, setIsUkr] = useState(true);
 
   const { t } = useTranslation();
 
-  const changeLanguage = (lng) => {
+  const changeLanguage = (lng, bool) => {
+    setIsUkr(!bool);
     i18n.changeLanguage(lng);
   };
 
@@ -46,9 +49,19 @@ export const Header = () => {
             </li>
           </ul>
 
-          <div className="header__button">
-            <button onClick={() => changeLanguage('ua')}>UKR</button>
-            <button onClick={() => changeLanguage('en')}>ENG</button>
+          <div className="header__buttons">
+            <button 
+              onClick={() => changeLanguage('ua', false)}
+              className={`header__button header__button--ukr ${isUkr ? 'activeStatus' : ''}`}
+            >
+              UKR
+            </button>
+            <button
+              className={`header__button header__button--eng ${isUkr ? '' : 'activeStatus'}`}
+              onClick={() => changeLanguage('en', true)}
+            >
+              ENG
+            </button>
           </div>
         </div>
       </div>
