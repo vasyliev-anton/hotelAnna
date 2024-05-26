@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hotelanna/static/css/main.4a8aefd5.css",
-    "main.js": "/hotelanna/static/js/main.e4c235ce.js",
+    "main.css": "/hotelanna/static/css/main.babc2499.css",
+    "main.js": "/hotelanna/static/js/main.c3a12ac8.js",
     "static/media/IMG_1352 2.jpg": "/hotelanna/static/media/IMG_1352 2.ecbbd92caa621c6763fe.jpg",
     "static/media/2.jpg": "/hotelanna/static/media/2.617ae7c020a28fb366a5.jpg",
     "static/media/1.jpg": "/hotelanna/static/media/1.3e53d5eb18b361e8252a.jpg",
@@ -21,6 +21,7 @@
     "static/media/bath.svg": "/hotelanna/static/media/bath.013d96545a31480cd4f0005ef5d0cb21.svg",
     "static/media/conditioner.svg": "/hotelanna/static/media/conditioner.9a3e94b796697ad4b9dd9787a23aa08b.svg",
     "static/media/terrace.svg": "/hotelanna/static/media/terrace.2220d2ec4eaf15ea9ad0c789c4939127.svg",
+    "static/media/eng.svg": "/hotelanna/static/media/eng.1d73a0b2f4db22feddb9.svg",
     "static/media/tvRoom.svg": "/hotelanna/static/media/tvRoom.8165f8cd49580b4e4567419a1523df01.svg",
     "static/media/geo icon.svg": "/hotelanna/static/media/geo icon.ac89f48b351f09ab370d061166ee380f.svg",
     "static/media/iconPerson.svg": "/hotelanna/static/media/iconPerson.99223fe2cd7bbd6380d5bbd75f8e9cf9.svg",
@@ -30,6 +31,7 @@
     "static/media/wi-fi.svg": "/hotelanna/static/media/wi-fi.880fc66d89878ca525aed66714164ea9.svg",
     "static/media/tag.svg": "/hotelanna/static/media/tag.44ecc39bdf9321444e4a3a93898b6573.svg",
     "static/media/bed.svg": "/hotelanna/static/media/bed.e1d41cfa72448e4cdaadd6b0a885ce3d.svg",
+    "static/media/ukr.svg": "/hotelanna/static/media/ukr.565633e26a5bff7e65c7.svg",
     "static/media/ABOUT US.svg": "/hotelanna/static/media/ABOUT US.86d5c3d8ab6b60989bc1.svg",
     "index.html": "/hotelanna/index.html",
     "static/media/Mail.svg": "/hotelanna/static/media/Mail.aa520b13d55ea26ba7956dd7b7781995.svg",
@@ -37,11 +39,11 @@
     "static/media/getFetch.cjs": "/hotelanna/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Check.svg": "/hotelanna/static/media/Check.c05aceb20f375e372fb6.svg",
     "static/media/down.svg": "/hotelanna/static/media/down.b86a941abb07b29258af74aedc1c8bc1.svg",
-    "main.4a8aefd5.css.map": "/hotelanna/static/css/main.4a8aefd5.css.map",
-    "main.e4c235ce.js.map": "/hotelanna/static/js/main.e4c235ce.js.map"
+    "main.babc2499.css.map": "/hotelanna/static/css/main.babc2499.css.map",
+    "main.c3a12ac8.js.map": "/hotelanna/static/js/main.c3a12ac8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a8aefd5.css",
-    "static/js/main.e4c235ce.js"
+    "static/css/main.babc2499.css",
+    "static/js/main.c3a12ac8.js"
   ]
 }
