@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import powder from '../../imgs/powder.png';
 import tag from '../../imgs/tag.svg';
 
 import {ReactComponent as Tag} from '../../imgs/tag.svg';
 
 export const Testimonials = () => {
+
+  const { t } = useTranslation();
 
   return (
     <section className="section" id='testimonials'>
@@ -13,7 +16,7 @@ export const Testimonials = () => {
 
         </div>
         <span className="section__span">
-          Відгуки наших  <span className="section__span--color-yel">гостей</span>
+          {t('testimonials1')} <span className="section__span--color-yel">{t('testimonials2')}</span>
         </span>
         <hr />
       </div>

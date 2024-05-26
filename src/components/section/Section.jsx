@@ -11,9 +11,12 @@ import conditionerIcon from '../../icons/conditioner.svg';
 import freeWifiIcon from '../../icons/wi-fi.svg';
 
 import rooms from '../../API/rms.json';
+import { useTranslation } from 'react-i18next';
 
 export const Section = ({ list, setCurrentRoom }) => {
   const [roomList, setRoomList] = useState([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (list) {
@@ -32,13 +35,14 @@ export const Section = ({ list, setCurrentRoom }) => {
     return null;
   }
 
+
   return (
     <section className="section" id='rooms'>
       <div className="section__title-name">
         <hr />
         <div></div>
         <span className="section__span">
-          <span className="section__span--color-yel">Наші</span> кімнати
+          <span className="section__span--color-yel">{t('our')}</span> {t('rooms')}
         </span>
         <hr />
       </div>
@@ -52,12 +56,12 @@ export const Section = ({ list, setCurrentRoom }) => {
             <div className="card__line">
               <div className='card__line--group'>
                 <img src={profileIcon} alt="Guest Icon" />
-                <span className="card__span">{card.guests} Особи</span>
+                <span className="card__span">{card.guests} {t('guests')}</span>
               </div>
               <span className="card__span">{card.price}</span>
             </div>
             <div className='card__description'>
-              <span className='card__name'>{card.comfort}</span>
+              <span className='card__name'>{t(`${card.comfort}`)}</span>
               <ul className='card__list'>
                 <li className='card__item'>
                   <img src={bedIcon} alt="Bed Icon" className='card__icon' />
@@ -97,7 +101,7 @@ export const Section = ({ list, setCurrentRoom }) => {
             <button
                 className="card__button"
                 onClick={() => setCurrentRoom(card.rmNumber)}>
-                Дізнатися більше
+                {t('getmore')}
               </button>
           </li>
         ))}

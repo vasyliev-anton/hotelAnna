@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next"
+
 export const Marks = () => {
+
+  const { t } = useTranslation();
 
   return (
     <section className="section">
       <div className="section__title-name">
         <hr />
         <span className="section__span">
-          Ми <span className="section__span--color-yel">найкращі</span> в категоріях
+          {t('marks1')} <span className="section__span--color-yel">{t('marks2')}</span> {t('marks3')}
         </span>
         <hr />
       </div>
@@ -14,21 +18,21 @@ export const Marks = () => {
       <div className="marks">
         <ul className="marks__list">
           <li className="marks__item">
-            Персонал
+          {t('staff')}
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.4
             </div>
           </li>
           <li className="marks__item">
-            Чистота
+          {t('clean')}
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.5
             </div>
           </li>
           <li className="marks__item">
-            Комфорт
+          {t('comfort')}
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.7
@@ -38,21 +42,21 @@ export const Marks = () => {
 
         <ul className="marks__list">
           <li className="marks__item">
-            Засоби
+            {t('facilities')}
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.6
             </div>
           </li>
           <li className="marks__item">
-            Співвідношення ціни та якості
+            {t('value')} 
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.5
             </div>
           </li>
           <li className="marks__item">
-            Місцезнаходження
+            {t("geo")}
             <div className="marks__line--group">
               <div className="marks__line"></div>
               9.5

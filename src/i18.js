@@ -6,7 +6,7 @@ i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'ua',
     lng: 'ua', 
     backend: {
       loadPath: '/hotelanna/locales/{{lng}}/{{ns}}.json',

@@ -14,7 +14,7 @@ export const Header = () => {
     <header className="header">
       <div className="header__bar">
         <div className="header__logo">
-          <span className="header__span">Міні - Готель</span>
+          <span className="header__span">{t('title')}</span>
         </div>
 
         <div className="header__group">
