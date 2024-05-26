@@ -4,16 +4,19 @@ import location from '../../icons/Location.svg';
 import down from '../../icons/down.svg';
 
 import { MyMap } from '../myMap/MyMap';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+
+  const { t } = useTranslation();
 
   return (
     <footer className="footer" id='footer'>
       <div className="footer__left">
         <div className="footer__left--group">
-          <span className="footer__about-us">Наші контакти</span>
+          <span className="footer__about-us">{t('footerContactUs')}</span>
           <div className='footer__booking'>
-            Бронювання:
+            {t('footerBooking')}:
             <div className="footer__buttons">
               <a href="tel:+380669886515">
               <button className="button button--footer" type='button' to='telephone'>
@@ -34,15 +37,15 @@ export const Footer = () => {
         <div className='footer__left--location'>
           <img src={location} alt="" />
           <span className='footer__left--location-span'>
-            Вулиця Шкільна 9 а, Подільськ, 66300, Україна
+          {t('footerGeo')}
           </span>
         </div>
       </div>
 
       <div className="footer__right">
         <div className='footer__title--group'>
-          <span className='footer__title'>Залиште свій <span className='clr--yellow'>відгук!</span></span>
-          <p className='footer__subtitle'>Ваш відгук допоможе зрозуміти що ми рухаємося в потрібному напрямку</p>
+          <span className='footer__title'>{t('footerFeedback1')} <span className='clr--yellow'>{t('footerFeedback2')} !</span></span>
+          <p className='footer__subtitle'>{t('footerFeedback3')}</p>
 
           <div className='footer__inputs'>
           <input type="text" className='input' placeholder="Введіть ваше ім/'я" />
@@ -51,7 +54,7 @@ export const Footer = () => {
         </div>
 
         <div className='footer__map--container'>
-          <span>Мы на карті</span>
+          <span>{t('footerFeedback4')}</span>
           <img src={down} alt="" className='footer__icon--down'/>
           <div className="map">
             <MyMap />

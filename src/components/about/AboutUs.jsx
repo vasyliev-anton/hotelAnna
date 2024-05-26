@@ -1,10 +1,15 @@
+import { useTranslation } from "react-i18next"
+
 export const AboutUs = () => {
+
+  const { t } = useTranslation();
+
   return (
     <section class="about-us section" id="about">
       <div className="about-us__title--container">
         <hr />
           <h3 className="about-us__title">
-            О нас
+            {t('aboutus')}
           </h3>
         <hr />
       </div>
@@ -15,8 +20,8 @@ export const AboutUs = () => {
               <div className="about-us--icon-inside"></div>
             </i>
             <span className="item__span">
-            Реєстрація заїзду<br/>
-            З 14:00 до 00:00
+            {t('checkin1')}<br/>
+            {t('checkin2')}
             </span>
           </li>
           <li className="about-us__item">
@@ -24,8 +29,8 @@ export const AboutUs = () => {
               <div className="about-us--icon-inside"></div>
             </i>
             <span className="item__span">
-            Проводити вечірки<br/>
-            заходи <span className="wrong">заборонено.</span>
+            {t('party1')}<br/>
+            <span className="wrong">{t('party2')}.</span>
             </span>
           </li>
           <li className="about-us__item">
@@ -33,8 +38,8 @@ export const AboutUs = () => {
               <div className="about-us--icon-inside"></div>
             </i>
             <span className="item__span">
-            <span className="success">Дозволено</span> приватна<br/>
-            автостоянка
+            <span className="success">{t('parking1')}</span> {t('private')}<br/>
+            {t('parking2')}
             </span>
           </li>
         </ul>
@@ -42,8 +47,8 @@ export const AboutUs = () => {
         <ul className="about-us__list">
         <li className="about-us__item">
             <span className="item__span">
-            Реєстрація виїзду<br/>
-            До 12:00
+            {t('chechout1')}<br/>
+            {t('chechout2')}
             </span>
             <i className="about-us--icon">
               <div className="about-us--icon-inside"></div>
@@ -51,8 +56,8 @@ export const AboutUs = () => {
           </li>
           <li className="about-us__item">
             <span className="item__span">
-            Курити в номерах<br/>
-            <span className="wrong">заборонено.</span>
+            {t('smoke1')}<br/>
+            <span className="wrong">{t('smoke2')}.</span>
             </span>
             <i className="about-us--icon">
               <div className="about-us--icon-inside"></div>
@@ -60,8 +65,8 @@ export const AboutUs = () => {
           </li>
           <li className="about-us__item">
             <span className="item__span">
-            Розміщення з хатніми<br/>
-            Зтваринами <span className="success">дозволено</span>
+            {t('pets1')}<br/>
+            <span className="success">{t('pets2')}</span>
             </span>
             <i className="about-us--icon">
               <div className="about-us--icon-inside"></div>

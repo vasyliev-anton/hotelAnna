@@ -49,6 +49,8 @@
 .about-us__description {
   display: flex;
   justify-content: space-between;
+
+  padding: 0 210px;
   animation: description-fade-in 1s ease-in-out forwards; /* New animation for description */
 }
 
