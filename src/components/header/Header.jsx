@@ -34,7 +34,7 @@ export const Header = () => {
             </li>
             <li className="header__item">
               <a href="#footer" className="header__link">
-                {t('Contacts')}
+                {t('contacts')}
               </a>
             </li>
             <li className="header__item">

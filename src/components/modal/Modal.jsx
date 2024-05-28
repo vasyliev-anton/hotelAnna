@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import data from '../../API/rms.json';
+import { useTranslation } from 'react-i18next';
 
 export const Modal = ({ currentRoom, setCurrentRoom }) => {
   const [mainPhoto, setMainPhoto] = useState(null);
@@ -10,6 +11,8 @@ export const Modal = ({ currentRoom, setCurrentRoom }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [dataRoom, setDataRoom] = useState(null);
+
+  const { t } = useTranslation();
 
 
   useEffect(() => {
@@ -77,19 +80,19 @@ export const Modal = ({ currentRoom, setCurrentRoom }) => {
         </div>
 
          <div className="modal__description">
-          <h5 className="modal__title">Aпартаменти: {dataRoom && dataRoom.comfort}</h5>
+          <h5 className="modal__title">{t('aprtms')}: {dataRoom && t(`${dataRoom.comfort}`)}</h5>
           <ul className="modal__list">
-            <li className="modal__item check">Велика площа</li>
-            <li className="modal__item check">Ванна кімната</li>
-            <li className="modal__item check">Кондиціонування</li>
-            <li className="modal__item check">Free Wi-Fi</li>
+            <li className="modal__item check">{t("largeArea")}</li>
+            <li className="modal__item check">{t("bath")}</li>
+            <li className="modal__item check">{t("air")}</li>
+            <li className="modal__item check">{t('fWifi')}</li>
           </ul>
-          <span className="modal__subtitle">Розмір номеру: 30 м²</span>
+          <span className="modal__subtitle">{t('sizerms')} 30 {t("m")}</span>
  
-          <span className="modal__note">Ціна: <span className='success'>{dataRoom && dataRoom.price} за добу</span></span>
-    
+          <span className="modal__note">{t('price')}: <span className='success'>{dataRoom && dataRoom.price} | {t("price2")}</span></span>
+          
           <p className="modal__text-description">
-            {dataRoom ? dataRoom.description : ""}
+            {dataRoom ? t(`${dataRoom.description}`)  : ""}
           </p>
           
 

@@ -19,6 +19,8 @@ export const Banner = () => {
       <span className='img__span'>
         {t('main')}
       </span>
+
+      <button className='img__button'>{t('footerBooking')}</button>
     </div>
   )
 }

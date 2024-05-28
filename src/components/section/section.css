@@ -390,6 +390,11 @@ hr {
     gap: 20px;
   }
 
+  .icon--emb {
+    width: 30px;
+    height: 30px;
+  }
+
   .marks__list {
     flex-direction: column;
     gap: 40px;
@@ -439,6 +444,11 @@ hr {
     text-align: center;
   }
 
+  .icon--emb {
+    width: 20px;
+    height: 20px;
+  }
+
   .marks__list {
     flex-direction: column;
     gap: 20px;
@@ -449,6 +459,8 @@ hr {
   }
 
   .testimonials__testimonial {
+
+    height: 450px;
     width: 100%;
   }
 }

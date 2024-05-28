@@ -49,7 +49,6 @@
 .about-us__description {
   display: flex;
   justify-content: space-between;
-
   padding: 0 210px;
   animation: description-fade-in 1s ease-in-out forwards; /* New animation for description */
 }
@@ -68,7 +67,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
@@ -111,4 +109,95 @@
 @keyframes list-items-bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); } /* Bounce effect */
+}
+
+/* Media Queries for Adaptive Design */
+@media (max-width: 1200px) {
+  .about-us {
+    padding-top: 100px;
+  }
+  
+  .about-us__title {
+    width: 400px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .about-us__description {
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding-top: 80px;
+  }
+  
+  .about-us__title--container {
+    flex-direction: column;
+  }
+  
+  .about-us__title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .about-us__description {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  
+  .about-us__list {
+    gap: 50px;
+  }
+  
+  .about-us__item {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us {
+    padding-top: 60px;
+  }
+  
+  .about-us__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-us__title::before {
+    width: 300px;
+    background-size: contain;
+
+    top: -50px;
+    right: 0;
+  }
+  
+  .about-us__description {
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-us__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .about-us--icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .about-us--icon-inside {
+    width: 20px;
+    height: 20px;
+    border-width: 4px;
+  }
 }
