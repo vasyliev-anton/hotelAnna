@@ -17,7 +17,10 @@
   "bath": "Ensuite bathroom",
   "air": "Air conditioning",
   "fWifi": "Free Wi-Fi",
-  "sizerms": "Size of the studio 30 m2",
+  "sizerms": "Size of the studio: ",
+  "m": "m²",
+  "price": "Price",
+  "price2": "per night",
   "emblems1": "The best",
   "emblems2": "hotel for your holiday",
   "emblems3": "Enjoy every step of the way",
@@ -55,5 +58,9 @@
   "footerFeedback1": "Leave us your",
   "footerFeedback2": "feedback",
   "footerFeedback3": "Your feedback will help us understand that we are moving in the right direction.",
-  "footerFeedback4": "On the Map"
+  "footerFeedback4": "On the Map",
+  "roomdescr1": "We invite you to our special studio room, where every element of the space has a special charm, and the atmosphere is filled with cosiness and modernity. You are welcomed by a spacious and comfortable wide double bed, which will create the perfect conditions for your holiday. You will have your own kitchenette with a fridge, an electric kettle, a microwave and kitchenware. You will also have a private bathroom with all the necessary amenities such as toiletries, towels and a hairdryer so you can enjoy a pleasant self-care routine.",
+  "roomdescr2": "Welcome to the room where comfort is combined with convenience, and every corner is designed for your relaxation and enjoyment. You will be greeted by a wide double bed where you can plunge into a world of sweet sleep and relaxation. A private kitchenette equipped with a fridge, electric kettle and microwave. You will also find a private bathroom with all toiletries, towels and a hairdryer.Don't forget to enjoy the other in-room amenities, such as air conditioning, a flat-screen TV and free Wi-Fi.",
+  "roomdescr3": "Welcome to a room where comfort is combined with convenience, and every corner is designed for your relaxation and enjoyment. You will be greeted by a wide double bed, where you can plunge into the world of sweet sleep and relaxation. A private kitchenette equipped with a fridge, electric kettle, microwave and washing machine. You will also find a private bathroom with all toiletries, towels and a hairdryer. Be sure to enjoy other in-room amenities such as air conditioning, a flat-screen TV and free Wi-Fi.",
+  "roomdescr4": "We welcome you to our simple and cosy standard rooms, where every guest can feel comfortable and convenient. In our standard room, you can choose between 2 or 3 separate beds. The room has a private bathroom with all the necessary amenities, such as toiletries and towels. Your room also includes a flat-screen TV, free Wi-Fi and air conditioning. For your convenience, a fridge and an electric kettle are available in the common area."
 }

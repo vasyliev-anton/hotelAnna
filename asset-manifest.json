@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hotelanna/static/css/main.babc2499.css",
-    "main.js": "/hotelanna/static/js/main.c3a12ac8.js",
+    "main.css": "/hotelanna/static/css/main.75451739.css",
+    "main.js": "/hotelanna/static/js/main.4982958b.js",
     "static/media/IMG_1352 2.jpg": "/hotelanna/static/media/IMG_1352 2.ecbbd92caa621c6763fe.jpg",
     "static/media/2.jpg": "/hotelanna/static/media/2.617ae7c020a28fb366a5.jpg",
     "static/media/1.jpg": "/hotelanna/static/media/1.3e53d5eb18b361e8252a.jpg",
     "static/media/3.jpg": "/hotelanna/static/media/3.8a0035b894213b57eee8.jpg",
     "static/media/0.jpg": "/hotelanna/static/media/0.c5db3e0f2151f95e4e31.jpg",
+    "static/media/7.jpg": "/hotelanna/static/media/7.64777cde9a206e193f38.jpg",
     "static/media/5.jpg": "/hotelanna/static/media/5.162639552f9eabc390f8.jpg",
     "static/media/4.jpg": "/hotelanna/static/media/4.7fe29104966c3e6a49ea.jpg",
     "static/media/6.jpg": "/hotelanna/static/media/6.a343b06f5d7789610244.jpg",
-    "static/media/7.jpg": "/hotelanna/static/media/7.64777cde9a206e193f38.jpg",
     "static/media/IMG_1352 1.jpg": "/hotelanna/static/media/IMG_1352 1.dcd20800e3a99c221410.jpg",
     "static/media/IMG_1090 1.jpg": "/hotelanna/static/media/IMG_1090 1.08c15ae908bd95381bb9.jpg",
     "static/media/IMG_1622 2.jpg": "/hotelanna/static/media/IMG_1622 2.61c6f6b48f085ffff183.jpg",
@@ -39,11 +39,11 @@
     "static/media/getFetch.cjs": "/hotelanna/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Check.svg": "/hotelanna/static/media/Check.c05aceb20f375e372fb6.svg",
     "static/media/down.svg": "/hotelanna/static/media/down.b86a941abb07b29258af74aedc1c8bc1.svg",
-    "main.babc2499.css.map": "/hotelanna/static/css/main.babc2499.css.map",
-    "main.c3a12ac8.js.map": "/hotelanna/static/js/main.c3a12ac8.js.map"
+    "main.75451739.css.map": "/hotelanna/static/css/main.75451739.css.map",
+    "main.4982958b.js.map": "/hotelanna/static/js/main.4982958b.js.map"
   },
   "entrypoints": [
-    "static/css/main.babc2499.css",
-    "static/js/main.c3a12ac8.js"
+    "static/css/main.75451739.css",
+    "static/js/main.4982958b.js"
   ]
 }
