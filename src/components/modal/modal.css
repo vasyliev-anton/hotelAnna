@@ -11,16 +11,16 @@
   transform: translate(-50%, -50%);
   align-items: center;
   align-self: center;
+  background-color: #ffffff; /* Adding background color for better visibility */
 }
 
-.modal--overlay  {
+.modal--overlay {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  content: '';
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /* Adjust height to cover entire viewport */
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -88,6 +88,7 @@
 .photos__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
   align-items: center;
@@ -114,8 +115,11 @@
   text-align: left;
 }
 
+.modal__subtitle, .modal__note, .modal__text-description, .modal__item {
+  font-family: Montserrat, sans-serif;
+}
+
 .modal__subtitle {
-  font-family: Montserrat;
   font-size: 15px;
   font-weight: 600;
   line-height: 18.29px;
@@ -123,7 +127,6 @@
 }
 
 .modal__note {
-  font-family: Montserrat;
   font-size: 13px;
   font-weight: 500;
   line-height: 22.1px;
@@ -131,7 +134,6 @@
 }
 
 .modal__text-description {
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 27.2px;
@@ -147,18 +149,10 @@
   gap: 18px;
   flex-direction: row;
   justify-content: flex-start;
-  text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.07px;
   text-align: left;
-}
-
-.photos__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .photos__item {
@@ -194,19 +188,18 @@
 }
 
 .wrong {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.75px;
   text-align: left;
-
   color: #FF0000;
 }
 
 .success {
-  color:#27AE60;
-  font-family: Montserrat;
+  color: #27AE60;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -214,9 +207,67 @@
   text-align: left;
 }
 
-/* Медиазапрос для скрытия модального окна на телефонах */
+/* Media query for hiding modal on phones */
 @media (max-width: 768px) {
-  .modal--container {
+  .modal--overlay {
     display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal {
+    flex-direction: column;
+  }
+
+  .modal--container {
+    width: 90%;
+    max-height: 80vh;
+  }
+
+  .modal__photos--container {
+    width: 100%;
+  }
+
+  .modal__description {
+    width: 100%;
+  }
+
+  .modal__img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .photos__item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__text-description {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1900px) { 
+  .modal__photo--main {
+    gap: 50px;
+  }
+
+  .modal__img {
+    max-width: 300px;
+    height: auto;
+  } 
+
+  .photos__item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .modal__text-description {
+    font-size: 14px;
   }
 }

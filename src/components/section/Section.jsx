@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 import profileIcon from '../../icons/iconPerson.svg';
-import bedIcon from '../../icons/bed.svg';
-import bathIcon from '../../icons/bath.svg';
-import washingMachineIcon from '../../icons/washing.svg';
-import terraceIcon from '../../icons/terrace.svg';
-import newStyleIcon from '../../icons/newStyle.svg';
-import tvRoomIcon from '../../icons/tvRoom.svg';
-import conditionerIcon from '../../icons/conditioner.svg';
-import freeWifiIcon from '../../icons/wi-fi.svg';
 
 import rooms from '../../API/rms.json';
 import { useTranslation } from 'react-i18next';
+
 
 export const Section = ({ list, setCurrentRoom }) => {
   const [roomList, setRoomList] = useState([]);
@@ -24,6 +17,8 @@ export const Section = ({ list, setCurrentRoom }) => {
         const data = rooms[room];
 
         data.sourceLink = require(`../../imgs/rooms/${room}/0.jpg`);
+
+        data.facilities.map(facilitie => facilitie[1] = require(`../../icons/${facilitie[1]}`));
 
         return data;
       });
@@ -63,38 +58,12 @@ export const Section = ({ list, setCurrentRoom }) => {
             <div className='card__description'>
               <span className='card__name'>{t(`${card.comfort}`)}</span>
               <ul className='card__list'>
-                <li className='card__item'>
-                  <img src={bedIcon} alt="Bed Icon" className='card__icon' />
-                  Апартаменти повністю
-                </li>
-                <li className='card__item'>
-                  <img src={conditionerIcon} alt="Conditioner Icon" className='card__icon' />
-                  Кондиціонер
-                </li>
-                <li className='card__item'>
-                  <img src={tvRoomIcon} alt="TV Icon" className='card__icon' />
-                  Телевізор з плоским екраном
-                </li>
-                <li className='card__item'>
-                  <img src={freeWifiIcon} alt="WiFi Icon" className='card__icon' />
-                  Безкоштовний Wi-Fi
-                </li>
-                <li className='card__item'>
-                  <img src={bathIcon} alt="Bath Icon" className='card__icon' />
-                  Ванна кімната в номері
-                </li>
-                <li className='card__item'>
-                  <img src={washingMachineIcon} alt="Washing Machine Icon" className='card__icon' />
-                  Пральна машина
-                </li>
-                <li className='card__item'>
-                  <img src={newStyleIcon} alt="New Style Icon" className='card__icon' />
-                  Сучасний ремонт
-                </li>
-                <li className='card__item'>
-                  <img src={terraceIcon} alt="Terrace Icon" className='card__icon' />
-                  Власна тераса
-                </li>
+                {card.facilities.map((facilitie) => (
+                  <li className='card__item' key={facilitie[0]}>
+                    <img src={facilitie[1]} alt="Bed Icon" className='card__icon' />
+                      {facilitie[0]}
+                  </li>
+                ))}
               </ul>
             </div>
             

@@ -6,7 +6,8 @@
        "comfort": "sd",
        "price": 950,
        "description": "roomdescr4",
-       "sourceLink": "../../imgs/rooms/18/0.jpg",
+       "sourceLink": "",
+       "facilities": [["Апартаменти повністю", "bed.svg"],["Кондиціонер", "conditioner.svg"], ["Телевізор з плоским екраном", "tvRoom.svg"], ["Безкоштовний Wi-Fi", "wi-fi.svg"], ["Ванна кімната в номері", "bath.svg"], ["Пральна машина", "washing.svg"], ["Сучасний ремонт", "newStyle.svg"],  ["Власна тераса", "terrace.svg"]],
        "photos": [
          "0.jpg",
          "1.jpg",
@@ -20,6 +21,7 @@
        "price": 950,
        "description": "roomdescr3",
        "sourceLink": "../../imgs/rooms/19/0.jpg",
+       "facilities": [["Апартаменти повністю", "bed.svg"],["Кондиціонер", "conditioner.svg"], ["Телевізор з плоским екраном", "tvRoom.svg"], ["Безкоштовний Wi-Fi", "wi-fi.svg"], ["Ванна кімната в номері", "bath.svg"], ["Пральна машина", "washing.svg"], ["Сучасний ремонт", "newStyle.svg"],  ["Власна тераса", "terrace.svg"]],
        "photos": [
          "0.jpg",
          "1.jpg",
@@ -36,6 +38,7 @@
        "price": 950,
        "description": "roomdescr2",
        "sourceLink": "../../imgs/rooms/20/0.jpg",
+       "facilities": [["Апартаменти повністю", "bed.svg"],["Кондиціонер", "conditioner.svg"], ["Телевізор з плоским екраном", "tvRoom.svg"], ["Безкоштовний Wi-Fi", "wi-fi.svg"], ["Ванна кімната в номері", "bath.svg"], ["Пральна машина", "washing.svg"], ["Сучасний ремонт", "newStyle.svg"],  ["Власна тераса", "terrace.svg"]],
        "photos": [
          "0.jpg",
          "1.jpg",
@@ -52,7 +55,8 @@
       "comfort": "studio",
       "price": 1100,
       "description": "roomdescr1",
-       "sourceLink": "../../imgs/rooms/21/0.jpg",
+      "sourceLink": "../../imgs/rooms/21/0.jpg",
+      "facilities": [["Апартаменти повністю", "bed.svg"],["Кондиціонер", "conditioner.svg"], ["Телевізор з плоским екраном", "tvRoom.svg"], ["Безкоштовний Wi-Fi", "wi-fi.svg"], ["Ванна кімната в номері", "bath.svg"], ["Пральна машина", "washing.svg"], ["Сучасний ремонт", "newStyle.svg"],  ["Власна тераса", "terrace.svg"]],
       "photos": [
         "0.jpg",
         "1.jpg",
@@ -71,6 +75,7 @@
       "price": 1200,
       "description": "roomdescr1",
       "sourceLink": "../../imgs/rooms/22/0.jpg",
+      "facilities": [["Апартаменти повністю", "bed.svg"],["Кондиціонер", "conditioner.svg"], ["Телевізор з плоским екраном", "tvRoom.svg"], ["Безкоштовний Wi-Fi", "wi-fi.svg"], ["Ванна кімната в номері", "bath.svg"], ["Пральна машина", "washing.svg"], ["Сучасний ремонт", "newStyle.svg"],  ["Власна тераса", "terrace.svg"]],
       "photos": [
         "0.jpg",
         "1.jpg",
