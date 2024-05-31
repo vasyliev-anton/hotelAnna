@@ -61,7 +61,7 @@ export const Section = ({ list, setCurrentRoom }) => {
                 {card.facilities.map((facilitie) => (
                   <li className='card__item' key={facilitie[0]}>
                     <img src={facilitie[1]} alt="Bed Icon" className='card__icon' />
-                      {facilitie[0]}
+                      {t(`${facilitie[0]}`)}
                   </li>
                 ))}
               </ul>
