@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/hotelanna/static/css/main.bee12455.css",
-    "main.js": "/hotelanna/static/js/main.b84580ab.js",
-    "static/media/main.png": "/hotelanna/static/media/main.e56345cd57d2fa6143f5.png",
+    "main.css": "/hotelanna/static/css/main.30d805b3.css",
+    "main.js": "/hotelanna/static/js/main.38889224.js",
     "static/media/IMG_1352 2.jpg": "/hotelanna/static/media/IMG_1352 2.ecbbd92caa621c6763fe.jpg",
     "static/media/2.jpg": "/hotelanna/static/media/2.617ae7c020a28fb366a5.jpg",
     "static/media/1.jpg": "/hotelanna/static/media/1.3e53d5eb18b361e8252a.jpg",
@@ -44,11 +43,11 @@
     "static/media/getFetch.cjs": "/hotelanna/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "static/media/Check.svg": "/hotelanna/static/media/Check.c05aceb20f375e372fb6.svg",
     "static/media/down.svg": "/hotelanna/static/media/down.b86a941abb07b29258af74aedc1c8bc1.svg",
-    "main.bee12455.css.map": "/hotelanna/static/css/main.bee12455.css.map",
-    "main.b84580ab.js.map": "/hotelanna/static/js/main.b84580ab.js.map"
+    "main.30d805b3.css.map": "/hotelanna/static/css/main.30d805b3.css.map",
+    "main.38889224.js.map": "/hotelanna/static/js/main.38889224.js.map"
   },
   "entrypoints": [
-    "static/css/main.bee12455.css",
-    "static/js/main.b84580ab.js"
+    "static/css/main.30d805b3.css",
+    "static/js/main.38889224.js"
   ]
 }
