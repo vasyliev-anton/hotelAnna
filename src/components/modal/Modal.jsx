@@ -97,26 +97,25 @@ export const Modal = ({ currentRoom, setCurrentRoom }) => {
           
 
 
-          <span className="modal__subtitle">Зручності номеру:</span>
+          <span className="modal__subtitle">{t('roomamenities')}:</span>
           <ul className="modal__list">
-            <li className="modal__item check">Праска</li>
-            <li className="modal__item check">Рушники</li>
-            <li className="modal__item check">Гардероб</li>
-            <li className="modal__item check">Парковка</li>
-            <li className="modal__item check">Телевізор</li>
-            <li className="modal__item check">Електрочайник</li>
-            <li className="modal__item check">Кондиціонер</li>
-            <li className="modal__item check">Вішалка для одягу</li>
-            <li className="modal__item check">Розміщення з тваринами дозволено</li>
-            <li className="modal__item check">Душева кабінка</li>
-            <li className="modal__item check">Туалетная папір та засоби гігієни</li>
+            <li className="modal__item check">{t('iron')}</li>
+            <li className="modal__item check">{t('towels')}</li>
+            <li className="modal__item check">{t("closet")}</li>
+            <li className="modal__item check">{t('parking')}</li>
+            <li className="modal__item check">{t('tv')}</li>
+            <li className="modal__item check">{t('electrickettle')}</li>
+            <li className="modal__item check">{t('air')}</li>
+            <li className="modal__item check">{t("hanger")}</li>
+            <li className="modal__item check">{t("shower")}</li>
+            <li className="modal__item check">{t('Toilet paper and toiletries')}</li>
           </ul>
 
-          <span className="modal__subtitle">Заборони:</span>
+          <span className="modal__subtitle">{t("prohibitions")}:</span>
 
           <ul className="modal__list">
-            <li>Куріння : <span className='wrong'>Заборонено</span></li>
-            <li>Вечірки : <span className='wrong'>Заборонено</span></li>
+            <li>{t('smokingp1')} : <span className='wrong'>{t('prohib')}</span></li>
+            <li>{t('partiesp2')} : <span className='wrong'>{t('prohib')}</span></li>
           </ul>
         </div> 
       </div>

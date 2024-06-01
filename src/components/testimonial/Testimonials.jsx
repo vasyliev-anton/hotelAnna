@@ -12,7 +12,7 @@ export const Testimonials = () => {
   useEffect(() => {
     const reviews = shuffleArray([["rev1", "Jeffrey"], ["rev2", "Kateryna "], ["rev3", "Roman"], ["rev4", "Olga"], ["rev5", "Illge"], ["rev6", "Artur"]])
 
-    setList(reviews.slice(2));
+    setList(reviews.slice(3));
   }, [])
 
 
@@ -40,7 +40,7 @@ export const Testimonials = () => {
                 <span className='testimonial__nickname'>{t(`${testimonial[1]}`)}</span>
                 <div className='testimonial__description'>
                   <Tag src={tag} alt="" className='testimonial__icon--start' />
-                  <p>{t(`${testimonial[0]}`)}</p>
+                  <p className='testimonial__paragraph'>{t(`${testimonial[0]}`)}</p>
                   <Tag src={tag} alt="" className='testimonial__icon--end' />
                 </div>
               </div>

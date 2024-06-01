@@ -288,7 +288,7 @@
 
 .testimonials__testimonial {
   width: 365px;
-  height: 550px;
+  height: 580px;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 500;
@@ -330,7 +330,7 @@
 
 .testimonial__description {
   margin-top: 21px;
-  padding: 0 25px;
+  padding: 0 25px;  
   position: relative;
 }
 
