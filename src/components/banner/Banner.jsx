@@ -11,8 +11,8 @@ export const Banner = () => {
     <div>
       <div className="img__banner">
         <img src={banner1} alt="" className="img__banner-slice" />
-        <img src={banner2} alt="" className="img__banner-slice" />
         <img src={banner3} alt="" className="img__banner-slice" />
+        <img src={banner2} alt="" className="img__banner-slice" />
         <img src={banner4} alt="" className="img__banner-slice" />
       </div>
 

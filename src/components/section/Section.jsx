@@ -4,12 +4,14 @@ import profileIcon from '../../icons/iconPerson.svg';
 
 import rooms from '../../API/rms.json';
 import { useTranslation } from 'react-i18next';
+import { shuffleArray } from '../../helper/shuffle';
 
 
 export const Section = ({ list, setCurrentRoom }) => {
   const [roomList, setRoomList] = useState([]);
 
   const { t } = useTranslation();
+
 
   useEffect(() => {
     if (list) {
@@ -19,6 +21,8 @@ export const Section = ({ list, setCurrentRoom }) => {
         data.sourceLink = require(`../../imgs/rooms/${room}/0.jpg`);
 
         data.facilities.map(facilitie => facilitie[1] = require(`../../icons/${facilitie[1]}`));
+
+        data.facilities = shuffleArray(data.facilities);
 
         return data;
       });
