@@ -38,8 +38,8 @@ export const AboutUs = () => {
               <div className="about-us--icon-inside"></div>
             </i>
             <span className="item__span">
-            <span className="success">{t('parking1')}</span> {t('private')}<br/>
-            {t('parking2')}
+            {t('private')} {t('parking2')}<br/>
+            <span className="success">{t('parking1')}</span> 
             </span>
           </li>
         </ul>

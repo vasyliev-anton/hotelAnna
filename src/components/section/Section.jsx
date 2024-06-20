@@ -22,8 +22,6 @@ export const Section = ({ list, setCurrentRoom }) => {
 
         data.facilities.map(facilitie => facilitie[1] = require(`../../icons/${facilitie[1]}`));
 
-        data.facilities = shuffleArray(data.facilities);
-
         return data;
       });
       setRoomList(res.reverse());

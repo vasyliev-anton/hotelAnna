@@ -89,7 +89,7 @@ export const Modal = ({ currentRoom, setCurrentRoom }) => {
           </ul>
           <span className="modal__subtitle">{t('sizerms')} 30 {t("m")}</span>
  
-          <span className="modal__note">{t('price')}: <span className='success'>{dataRoom && dataRoom.price} | {t("price2")}</span></span>
+          <span className="modal__note">{t('price')}: <span className='success'>{dataRoom && dataRoom.price} {t('uah')} | {t("price2")}</span></span>
           
           <p className="modal__text-description">
             {dataRoom ? t(`${dataRoom.description}`)  : ""}
@@ -108,7 +108,7 @@ export const Modal = ({ currentRoom, setCurrentRoom }) => {
             <li className="modal__item check">{t('air')}</li>
             <li className="modal__item check">{t("hanger")}</li>
             <li className="modal__item check">{t("shower")}</li>
-            <li className="modal__item check">{t('Toilet paper and toiletries')}</li>
+            <li className="modal__item check">{t('paper')}</li>
           </ul>
 
           <span className="modal__subtitle">{t("prohibitions")}:</span>
