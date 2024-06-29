@@ -24,10 +24,12 @@ export const Footer = () => {
                 +380 669 886 515
               </button>
               </a>
+              <a href="mailto:guest2023@ukr.net">
               <button className="button button--footer">
                 <img src={mail} alt="" className='button--icon' />
-                info@hotel
+                guest2023@ukr.net
               </button>
+              </a>
             </div>
           </div>
         </div>
