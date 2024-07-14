@@ -9,7 +9,7 @@ i18n
     fallbackLng: 'ua',
     lng: 'ua', 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/hotelanna/locales/{{lng}}/{{ns}}.json',
     },
     debug: true,
     react: {
