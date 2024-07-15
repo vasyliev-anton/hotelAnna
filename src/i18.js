@@ -6,8 +6,8 @@ i18next
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'ua',
+    fallbackLng: 'ua',
     backend: {
       loadPath: 'https://podilsk-guest-house.website//locales/{{lng}}/{{ns}}.json'
     }
