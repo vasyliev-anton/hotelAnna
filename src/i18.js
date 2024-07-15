@@ -9,7 +9,7 @@ i18next
     lng: 'en',
     fallbackLng: 'en',
     backend: {
-      loadPath: 'https://your-custom-domain.com/locales/{{lng}}/{{ns}}.json'
+      loadPath: 'https://podilsk-guest-house.website//locales/{{lng}}/{{ns}}.json'
     }
   });
 
