@@ -19,7 +19,7 @@ export const Banner = () => {
       <span className='img__span'>
         {t('main')}
       </span>
-      <a href="tel:5555555555">
+      <a href="tel:+380669886515">
         <button
           className='img__button'
         >
