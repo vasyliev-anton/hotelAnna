@@ -1,20 +1,14 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
+import HttpBackend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-http-backend';
 
-i18n
-  .use(Backend)
+i18next
+  .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'ua',
-    lng: 'ua', 
+    lng: 'en',
+    fallbackLng: 'en',
     backend: {
-      loadPath: '/hotelanna/locales/{{lng}}/{{ns}}.json',
-    },
-    debug: true,
-    react: {
-      useSuspense: false,
-    },
+      loadPath: 'https://your-custom-domain.com/locales/{{lng}}/{{ns}}.json'
+    }
   });
-
-export default i18n;
