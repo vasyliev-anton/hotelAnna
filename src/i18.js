@@ -12,3 +12,5 @@ i18next
       loadPath: 'https://your-custom-domain.com/locales/{{lng}}/{{ns}}.json'
     }
   });
+
+export default i18next;
