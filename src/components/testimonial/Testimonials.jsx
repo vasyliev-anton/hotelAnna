@@ -34,7 +34,7 @@ export const Testimonials = () => {
       <div className="testimonials">
         <ul className="testimonials__list">
           {list.map((testimonial) => (
-            <li className="testimonials__item">
+            <li className="testimonials__item" key={testimonial[1]}>
               <div className="testimonials__testimonial">
                 <img src={powder} alt="" className='testimonial__photo' />
                 <span className='testimonial__nickname'>{t(`${testimonial[1]}`)}</span>

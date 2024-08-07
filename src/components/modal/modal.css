@@ -170,6 +170,7 @@
   background-image: url('../../icons/Check.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .modal__photo--main {
@@ -207,12 +208,48 @@
   text-align: left;
 }
 
-/* Media query for hiding modal on phones */
 @media (max-width: 768px) {
-  .modal--overlay {
-    display: none !important;
+  .modal {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .modal--container {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .modal__photos--container, .modal__description {
+    width: 100%;
+  }
+
+  .modal__img {
+    width: 275px;
+    height: 375px;
+  }
+
+  .photos__item {
+    width: 80px;
+    height: 80px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__list {
+    columns: 2;
+    column-gap: 0;
+  }
+
+  .modal__item {
+    padding: 10px 0;
   }
 }
+
+  .modal__subtitle, .modal__note, .modal__text-description, .modal__item {
+    font-size: 14px;
+  }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .modal {
@@ -271,3 +308,4 @@
     font-size: 14px;
   }
 }
+
